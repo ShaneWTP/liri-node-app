@@ -40,7 +40,7 @@ In this example, I am searching for concert dates for the band "The Menzingers".
 ![alt text](images/shot-2.png)
 
 
-##**Spotify This**
+## **Spotify This**
 
 In this example, I am searching for song information based on the key words "Bleed American". With the top result coming back.
 
