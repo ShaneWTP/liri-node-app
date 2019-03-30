@@ -54,7 +54,6 @@ function concertThis() {
                     console.log("This artist has no upcoming events. Check back at a later date.")
                 }
                 else {
-                    console.log(response);
                     console.log("--------------EVENTS----------------")
                     for (var i = 0; i < response.data.length; i++) {
                         console.log("\nVenue: " + response.data[i].venue.name + "\nLocation: " + response.data[i].venue.city + ", " + response.data[i].venue.region + "\nEvent Date: " + moment(response.data[i].datetime).format('LL'));
@@ -90,8 +89,11 @@ function movieThis() {
     axios.get("http://www.omdbapi.com/?t=" + userQuery + "&y=&plot=short&apikey=trilogy").then(
         function (response) {
             console.log("-------------------------------------------------------------------------------")
-            console.log("Title: " + response.data.Title + "\nRelease Year: " + response.data.Year + "\nIMDB Rating: " + response.data.imdbRating + "\nRotten Tomatoes Score: " + response.data.Ratings[1].Value + "\nProduction Country: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors);
+            console.log("Title: " + response.data.Title + "\nRelease Year: " + response.data.Year + "\nIMDB Rating: " + response.data.imdbRating +  "\nProduction Country: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors);
+            //For some reason the Rotten Tomatoes Score will no longer work for me. Not sure why, so I am commenting it out so the rest of the code works
+            //console.log("Rotten Tomatoes Score: " + response.data.Ratings[1].Value);
             console.log("-------------------------------------------------------------------------------");
+            
         }
     );
 }
