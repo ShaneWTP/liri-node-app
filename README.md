@@ -1,4 +1,4 @@
-# **LIRI Node App**
+#**LIRI Node App**
 
 The LIRI bot is a node application that allows the user to display information based on the command line inputs.
 
@@ -32,7 +32,7 @@ After you type one of the commands, you may enter whatever information you are l
 
 Here are a few examples with their output:
 
-**Concert This**
+##**Concert This**
 
 In this example, I am searching for concert dates for the band "The Menzingers". Their upcoming events are listed by date.
 
@@ -40,7 +40,7 @@ In this example, I am searching for concert dates for the band "The Menzingers".
 ![alt text](images/shot-2.png)
 
 
-**Spotify This**
+##**Spotify This**
 
 In this example, I am searching for song information based on the key words "Bleed American". With the top result coming back.
 
@@ -49,7 +49,7 @@ In this example, I am searching for song information based on the key words "Ble
 
 
 
-**Movie This**
+##**Movie This**
 
 In this example, I am searching for movie information based on the key words "Homeward Bound". With the top result coming back.
 
@@ -57,7 +57,7 @@ In this example, I am searching for movie information based on the key words "Ho
 ![alt text](images/shot-4.png)
 
 
-**Do What It Says**
+##**Do What It Says**
 
 In this example, the randomly generated query is pulled from a file called random.txt.
 
